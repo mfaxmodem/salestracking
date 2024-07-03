@@ -62,6 +62,8 @@ class MainActivity : AppCompatActivity() {
                     val response = RetrofitInstance.api.startVisit(request)
                     if (response.isSuccessful) {
                         // Visit started successfully
+                    } else {
+                        // Handle error case
                     }
                 }
             }
